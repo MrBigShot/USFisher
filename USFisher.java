@@ -42,7 +42,7 @@ import org.rev317.api.methods.Players;
 import org.rev317.api.methods.SceneObjects;
 import org.rev317.api.methods.Skill;
 
-@ScriptManifest( author = "BigShot", category = Category.FISHING, description = "Fishes on UltimateScape 2", name = "USFisher", servers = { "UltimateScape" }, version = 1.0 )
+@ScriptManifest( author = "BigShot", category = Category.FISHING, description = "Fishes on UltimateScape 2", name = "USFisher", servers = { "UltimateScape" }, version = 1.1 )
 public class USFisher extends Script implements Paintable, MessageListener {
 	
 	private final ArrayList<Strategy> strategies = new ArrayList<Strategy>();
