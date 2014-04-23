@@ -224,7 +224,7 @@ public class USFisher extends Script implements Paintable, MessageListener {
 				} catch (Exception e) {
 					
 				}
-				Time.sleep(1500);
+				Time.sleep(2000);
 			} else if (fish != null && !fish.isOnScreen() && Players.getLocal().getAnimation() == -1 && !Players.getLocal().isWalking()) {
 				fish.getLocation().clickMM();
 				Time.sleep(500);
@@ -254,7 +254,8 @@ public class USFisher extends Script implements Paintable, MessageListener {
 			SceneObject booth = getSceneObject(2213);
 			return (Inventory.isFull()
 					&& booth != null
-					&& booth.getLocation().distanceTo() < 8);
+					&& booth.getLocation().distanceTo() < 8
+					&& !Players.getLocal().isWalking());
 		}
 
 		@Override
